@@ -16,7 +16,7 @@ export default function Home() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://localhost:3001/api/leads", {
+      const response = await fetch("/admin", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
